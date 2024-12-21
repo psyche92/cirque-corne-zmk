@@ -34,7 +34,7 @@
         reg = <0x2a>;
         status = "disabled";
         dr-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
-        sensitivity = "4x";
+        sensitivity = "1x";
         sleep;
         //no-taps;
     };
