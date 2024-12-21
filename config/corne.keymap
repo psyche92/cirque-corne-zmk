@@ -35,6 +35,26 @@
             bindings = <&kp DEL>;
             key-positions = <8 9>;
         };
+
+        a-zk {
+            bindings = <&kp B>;
+            key-positions = <30 31>;
+        };
+
+        a-zew {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 10>;
+        };
+
+        a-zklw {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <10 11>;
+        };
+
+        a-zklx {
+            bindings = <&kp MINUS>;
+            key-positions = <6 7>;
+        };
     };
 
     keymap {
