@@ -65,7 +65,7 @@
         };
 
         z-dkfj {
-            bindings = <&kp K_VOLUME_DOWN>;
+            bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <18 30>;
         };
 
