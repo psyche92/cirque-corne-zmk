@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#include <dt-bindings/zmk/pointing.h>
 / {
     combos {
         compatible = "zmk,combos";
@@ -78,15 +77,37 @@
         z-dkfjgfg {
             bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <19 31>;
-        };z-kdjfk {
-         bindings = <&kp LC(TAB)>;
-         key-positions = <12 13>;};z-dsflkl {
-         bindings = <&kp LS(LC(TAB))>;
-         key-positions = <13 14>;};s-sdfkfl {
-         bindings = <&kp LC(W)>;
-         key-positions = <1 2>;};z-sdflkfkfg {
-         bindings = <&kp LC(T)>;
-         key-positions = <4 5>;};
+        };
+
+        z-kdjfk {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        z-dsflkl {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <13 14>;
+        };
+
+        s-sdfkfl {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 2>;
+        };
+
+        z-sdflkfkfg {
+            bindings = <&kp LC(T)>;
+            key-positions = <4 5>;
+        };
+
+        z-dkfkfj {
+            bindings = <&kp K_BACK>;
+            key-positions = <25 26>;
+        };
+
+        z-kdfjg {
+            bindings = <&kp K_FORWARD>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
@@ -104,7 +125,7 @@
 &kp TAB    &kp A  &kp S  &kp D      &kp F         &kp G    &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V         &kp B    &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &kp LCTRL  &kp LEFT_ALT  &mo 1    &kp SPACE  &kp RIGHT_ALT  &mo 2
->;
+            >;
         };
 
         lower_layer {
@@ -119,7 +140,7 @@
 &kp CAPS   &kp LEFT         &kp LEFT      &kp DOWN      &kp RIGHT       &kp PAGE_UP      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MB1        &mmv MOVE_UP     &mkp MB2
 &kp LSHFT  &trans           &trans        &trans        &trans          &kp PAGE_DOWN    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
                                           &kp LGUI      &trans          &kp SPACE        &kp N0        &kp DOT       &kp RALT
->;
+            >;
         };
 
         raise_layer {
@@ -134,7 +155,7 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp F7   &kp LEFT              &kp LEFT               &kp DOWN      &kp RIGHT     &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp F10  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT   &kp QUESTION  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET  &trans                &kp RALT
->;
+            >;
         };
     };
 };
