@@ -13,6 +13,34 @@
 #include <dt-bindings/zmk/pointing.h>
 
 
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 1 2000>;
+}
+
+&mmv_input_listener {
+    input-processors = <&zip_temp_layer 1 2000>;
+}
+
+&msc_input_listener {
+    input-processors = <&zip_temp_layer 1 2000>;
+}
+
+
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
+
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
+
+
 / {
     combos {
         compatible = "zmk,combos";
