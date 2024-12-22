@@ -29,8 +29,9 @@
     acceleration-exponent = <1>;
 };
 
-
-
+zmk,behavior-mouse-move
+zmk,behavior-mouse-keys
+zmk,behavior-mouse-scroll
 
 
 / {
