@@ -153,7 +153,7 @@
 &kp TILDE  &kp EXCLAMATION  &kp UP_ARROW  &kp UP_ARROW  &msc SCRL_DOWN  &msc SCRL_UP     &kp N7        &kp N8        &kp N9        &kp A           &kp EXCLAMATION  &kp BSPC
 &kp CAPS   &kp LEFT         &kp LEFT      &kp DOWN      &kp RIGHT       &kp PAGE_UP      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MB1        &mmv MOVE_UP     &mkp MB2
 &kp LSHFT  &trans           &trans        &trans        &trans          &kp PAGE_DOWN    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-                                          &kp LGUI      &trans          &kp SPACE        &kp N0        &kp DOT       &kp RALT
+                                          &kp LCTRL     &trans          &kp SPACE        &kp N0        &kp DOT       &kp RALT
             >;
         };
 
