@@ -114,6 +114,11 @@
             bindings = <&kp K_FORWARD>;
             key-positions = <26 27>;
         };
+
+        z-dkfjg {
+            bindings = <&kp SQT>;
+            key-positions = <35 23>;
+        };
     };
 
     behaviors {
