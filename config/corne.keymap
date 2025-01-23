@@ -104,6 +104,11 @@
             bindings = <&kp LA(RIGHT)>;
             key-positions = <3 4>;
         };
+
+        exit {
+            bindings = <&kp LA(F4)>;
+            key-positions = <0 11>;
+        };
     };
 
     behaviors {
@@ -140,10 +145,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp UP_ARROW  &kp UP_ARROW  &mkp RCLK     &mkp LCLK         &kp N7        &kp N8        &kp N9        &kp A           &kp EXCLAMATION  &kp BSPC
-&kp CAPS   &kp LEFT         &kp LEFT      &kp DOWN      &msc SCRL_UP  &msc SCRL_DOWN    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MB1        &mmv MOVE_UP     &mkp MB2
-&kp LSHFT  &trans           &trans        &trans        &kp PAGE_UP   &kp PAGE_DOWN     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-                                          &kp LCTRL     &kp LEFT_ALT  &kp SPACE         &kp N0        &kp DOT       &kp RALT
+&kp TILDE  &kp EXCLAMATION  &kp F2    &kp F5     &mkp RCLK     &mkp LCLK         &kp N7        &kp N8        &kp N9        &kp A           &kp EXCLAMATION  &kp BSPC
+&kp CAPS   &kp LEFT         &kp LEFT  &kp DOWN   &msc SCRL_UP  &msc SCRL_DOWN    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp MB1        &mmv MOVE_UP     &mkp MB2
+&kp LSHFT  &trans           &trans    &trans     &kp PAGE_UP   &kp PAGE_DOWN     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+                                      &kp LCTRL  &kp LEFT_ALT  &kp SPACE         &kp N0        &kp DOT       &kp RALT
             >;
         };
 
@@ -155,10 +160,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH   &kp DLLR      &kp PRCNT    &kp F2     &kp F4                &kp UP_ARROW           &kp UP_ARROW  &kp MINUS     &kp BSPC
-&kp LCTRL  &kp F2    &kp F4  &kp F5     &kp F7        &kp F10      &kp F7     &kp LEFT              &kp LEFT               &kp DOWN      &kp RIGHT     &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans     &trans        &trans       &kp F10    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT   &kp QUESTION  &kp TILDE
-                             &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp SPACE  &trans                &kp RALT
+&kp TILDE  &kp EXCL  &kp AT  &kp HASH   &kp F4                 &kp PRCNT            &kp F2     &kp F4                &kp F10               &kp UP_ARROW           &kp MINUS    &kp BSPC
+&kp LCTRL  &kp F2    &kp F4  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET     &kp F7     &kp LEFT              &kp LEFT              &kp DOWN               &kp RIGHT    &kp KP_ENTER
+&kp LSHFT  &kp F5    &trans  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp F10    &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp RIGHT_SHIFT
+                             &kp LCTRL  &kp LEFT_ALT           &kp SPACE            &kp SPACE  &trans                &kp RALT
             >;
         };
     };
