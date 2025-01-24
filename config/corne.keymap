@@ -160,9 +160,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH   &kp F4                 &kp PRCNT            &kp F2     &kp F4                &kp F10               &kp UP_ARROW           &kp MINUS    &kp BSPC
-&kp LCTRL  &kp F2    &kp F4  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET     &kp F7     &kp LEFT              &kp LEFT              &kp DOWN               &kp RIGHT    &kp KP_ENTER
-&kp LSHFT  &kp F5    &trans  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp F10    &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp RIGHT_SHIFT
+&kp TILDE  &kp EXCL  &kp AT  &kp HASH   &kp F4                 &kp PRCNT            &kp F2     &kp F4                &kp F10               &kp UP_ARROW           &kp MINUS  &kp BSPC
+&kp LCTRL  &kp F2    &kp F4  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET     &kp F7     &kp LEFT              &kp LEFT              &kp DOWN               &kp RIGHT  &kp KP_ENTER
+&kp LSHFT  &kp F5    &trans  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp F10    &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT    &kp RIGHT_SHIFT
                              &kp LCTRL  &kp LEFT_ALT           &kp SPACE            &kp SPACE  &trans                &kp RALT
             >;
         };
