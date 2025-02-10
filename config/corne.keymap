@@ -176,5 +176,14 @@
                                        &kp LCTRL             &kp LEFT_ALT           &kp SPACE    &kp SPACE              &trans           &kp RALT
             >;
         };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans    &msc SCRL_UP    &trans      &mkp MB1        &mkp MB2         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mkp MB2  &msc SCRL_DOWN  &mkp MB1    &msc SCRL_DOWN  &msc SCRL_UP     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans          &trans      &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans
+                        &trans    &trans          &trans      &trans          &trans           &trans
+            >;
+        };
     };
 };
