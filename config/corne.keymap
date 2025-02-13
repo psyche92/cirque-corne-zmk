@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -119,6 +120,21 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <22 23>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <9 10>;
+        };
     };
 
     behaviors {
@@ -140,7 +156,7 @@
             //                    |LCTRL| LALT| SP |   | SPACE | RSE  | RALT |
 
             bindings = <
-&gresc     &kp Q  &kp W  &kp E      &kp R         &kp T    &kp Y        &kp U       &kp I       &kp O       &kp P          &kp BACKSPACE
+&lt 3 ESC  &kp Q  &kp W  &kp E      &kp R         &kp T    &kp Y        &kp U       &kp I       &kp O       &kp P          &kp BACKSPACE
 &kp TAB    &kp A  &kp S  &kp D      &kp F         &kp G    &kp H        &kp J       &kp K       &kp L       &kp SEMICOLON  &kp ENTER
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V         &kp B    &kp N        &kp M       &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHFT
                          &kp LCTRL  &kp LEFT_ALT  &mo 1    &lt 1 SPACE  &lt 2 RALT  &lt 2 RALT
@@ -179,10 +195,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans    &msc SCRL_UP    &trans      &mkp MB1        &mkp MB2         &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp MB2  &msc SCRL_DOWN  &mkp MB1    &msc SCRL_DOWN  &msc SCRL_UP     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans          &trans      &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans
-                        &trans    &trans          &trans      &trans          &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &mkp MB1        &mkp MB2         &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &mkp MB2      &msc SCRL_DOWN  &mkp MB1        &msc SCRL_DOWN  &msc SCRL_UP     &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans          &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans
+                                    &trans        &trans          &trans          &trans          &trans           &trans
             >;
         };
     };
